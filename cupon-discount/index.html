@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discount offer || use coupon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="">
+    <section class="flex flex-col items-center mt-40">
+      <div class=" bg-purple-600 px-6 py-10 rounded-lg">
+        <h2 class="text-3xl font-bold pb-6 text-white ">Coupon Code For Discount</h2>
+        <input class="w-[100%] px-3 py-2 mr-2 mb-5 rounded-lg text-lg" id="inputPrice" type="number" placeholder="$ Enter amount" /><br>
+        <input class="w-[100%] px-3 py-2 mr-2 mb-6 rounded-lg text-lg" id="inputCode" type="text" placeholder="Enter coupon code" />
+        <button id="calc" class=" bg-blue-700 hover:bg-purple-500 text-white px-4 py-2 font-medium text-lg rounded-lg ">Calculate</button>
+      </div>
+    </section>
+    <section id="disc-container" class="bg-purple-700 text-white rounded-lg  mt-10  w-[28%] hidden mx-auto p-5">
+        <div class="">
+            <p class="text-2xl font-bold">Discount Price: $<span id="discount">00</span></p>
+        </div>
+        
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
